@@ -14,7 +14,6 @@
 
 # Follow-up: what if you can't use division?
 
-
 import unittest, time
 
 # solution
