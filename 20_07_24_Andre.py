@@ -110,26 +110,26 @@ class Solution_A(object):
         #     print('debug: ' + str(minheap.popMin()))
         # exit()
         last_val = minheap.popMin()
-        print('last_val: ' + str(last_val))
+        # print('last_val: ' + str(last_val))
         current_val = minheap.popMin()
-        print('current_val: ' + str(current_val))
+        # print('current_val: ' + str(current_val))
         missing_val = 0
         found = False
         working = True
         while working:
             if current_val == None:
-                print('current_val = None')
+                # print('current_val = None')
                 working = False
-            if last_val + 1 != current_val:
+            if last_val +1 > 0 and last_val + 1 != current_val:
                 print('found missing val')
                 missing_val = last_val+1
                 found = True
                 working = False
             else:
                 last_val = current_val
-                print('last_val: ' + str(last_val))
+                # print('last_val: ' + str(last_val))
                 current_val = minheap.popMin()
-                print('current_val: ' + str(current_val))
+                # print('current_val: ' + str(current_val))
         if found:
             print('missing_val: ' + str(missing_val))
         else:
