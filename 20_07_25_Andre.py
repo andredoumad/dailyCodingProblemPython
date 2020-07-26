@@ -42,3 +42,17 @@ def cdr(x):
         return b
     return x(last)
 print('result of cdr(cons(3, 4)): ' + str(cdr(cons(3, 4))))
+
+'''
+output
+<function cons.<locals>.pair at 0x7f89db423f70>
+car a: 3
+first a: 3
+first b: 4
+result of car(cons(3, 4)): 3
+<function cons.<locals>.pair at 0x7f89db42e040>
+car b: 4
+last a: 3
+last b: 4
+result of cdr(cons(3, 4)): 4
+'''
