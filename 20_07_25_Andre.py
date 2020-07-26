@@ -35,7 +35,7 @@ print('result of car(cons(3, 4)): ' + str(car(cons(3, 4))))
 # cdr(cons(3, 4)) returns 4
 def cdr(x):
     print(x)
-    print('car b: ' + str(x.__closure__[1].cell_contents))
+    print('cdr b: ' + str(x.__closure__[1].cell_contents))
     def last(a,b):
         print('last a: ' + str(a))
         print('last b: ' + str(b))
@@ -45,13 +45,13 @@ print('result of cdr(cons(3, 4)): ' + str(cdr(cons(3, 4))))
 
 '''
 output
-<function cons.<locals>.pair at 0x7f89db423f70>
+<function cons.<locals>.pair at 0x7f27166ecf70>
 car a: 3
 first a: 3
 first b: 4
 result of car(cons(3, 4)): 3
-<function cons.<locals>.pair at 0x7f89db42e040>
-car b: 4
+<function cons.<locals>.pair at 0x7f27166f7040>
+cdr b: 4
 last a: 3
 last b: 4
 result of cdr(cons(3, 4)): 4
