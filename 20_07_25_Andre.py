@@ -35,7 +35,7 @@ print('result of car(cons(3, 4)): ' + str(car(cons(3, 4))))
 # cdr(cons(3, 4)) returns 4
 def cdr(x):
     print(x)
-    print('car b: ' + str(x.__closure__[1].cell_contents))
+    print('cdr b: ' + str(x.__closure__[1].cell_contents))
     def last(a,b):
         print('last a: ' + str(a))
         print('last b: ' + str(b))
