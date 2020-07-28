@@ -52,19 +52,24 @@ def printTree(node, indent, last):
 
 printTree(node0, "", True)
 
-def findUnivals(node):
-    univals = 0
-    def solve(node):
+class Solution():
+    def __init__(self):
+        self.univals = 0
+
+    def solve(self, node):
+        # print('univals ' + str(self.univals))
         if node:
             if node.left ==None and node.right ==None:
-                univals += 1
+                self.univals += 1
             elif node.left != None and node.right != None:
                 if node.left.data == node.right.data:
-                    univals +=1
-            if node.left:
-                solve(node.left)
-            if node.right:
-                solve(node.right)
-    return univals
+                    self.univals +=1
+            self.solve(node.left)
+            self.solve(node.right)
 
-print(findUnivals(node0))
+def findUnivals(node):
+    solution = Solution()
+    solution.solve(node)
+    return solution.univals
+
+print('univals = ',findUnivals(node0))
