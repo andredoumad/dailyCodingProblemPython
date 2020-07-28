@@ -71,7 +71,7 @@ def findUnivals(node):
     solution = Solution()
     solution.solve(node)
     return solution.univals
-
+# big o of n - traversing each node once
 print('univals = ',findUnivals(node0))
 
 '''
