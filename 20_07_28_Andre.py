@@ -73,3 +73,15 @@ def findUnivals(node):
     return solution.univals
 
 print('univals = ',findUnivals(node0))
+
+'''
+OUTPUT:
+R----0
+    L----1
+    R----0
+        L----1
+        |   L----1
+        |   R----1
+        R----0
+univals =  5
+'''
