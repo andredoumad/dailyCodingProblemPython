@@ -72,3 +72,37 @@ class Solution(object):
 if __name__ == '__main__':
     solution = Solution()
     solution.solve(10000, justTryinToFunction)
+
+'''
+OUTPUT:
+
+n = 10.0 seconds
+appending new thread id 1 to threads 
+[1]
+self.threads [1]
+waiting for schedule to execute. 1.1014673709869385
+self.threads [1]
+waiting for schedule to execute. 2.1025757789611816
+self.threads [1]
+waiting for schedule to execute. 3.103795051574707
+self.threads [1]
+waiting for schedule to execute. 4.104191541671753
+self.threads [1]
+waiting for schedule to execute. 5.105414152145386
+self.threads [1]
+waiting for schedule to execute. 6.106584548950195
+self.threads [1]
+waiting for schedule to execute. 7.1080193519592285
+self.threads [1]
+waiting for schedule to execute. 8.109217405319214
+self.threads [1]
+waiting for schedule to execute. 9.110430479049683
+self.threads [1]
+-----------------
+yes, I am...
+-----------------
+removing thread id 1 from threads 
+waiting for schedule to execute. 10.111694574356079
+ all done :)
+
+'''
