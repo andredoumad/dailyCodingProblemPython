@@ -52,7 +52,7 @@ class Trie():
         for a,n in node.children.items(): 
             self.recursiveWordSolver(n, word + a) 
 
-    def printAutoSuggestions(self, key, dictionary): 
+    def search(self, key, dictionary): 
         self.makeTrie(dictionary)
         node = self.root 
         not_found = False
@@ -72,7 +72,7 @@ class Trie():
 
 def solution(key, keys):
     t = Trie()
-    result = t.printAutoSuggestions(key, keys) 
+    result = t.search(key, keys) 
     return result
 
 print(solution('de', ['dog', 'deer', 'deal']))
