@@ -11,7 +11,6 @@ For example, given the query string de and the set of strings [dog, deer, deal],
 Hint: Try preprocessing the dictionary into a more efficient data structure to speed up queries.
 '''
 
-# Andre Doumad
 
 class Node(): 
     def __init__(self):
