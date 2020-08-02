@@ -18,27 +18,17 @@ For example, if X = {1, 3, 5}, you could climb 1, 3, or 5 steps at a time.
 
 We will be sending the solution tomorrow, along with tomorrow's question. 
 '''
-# def staircase(n, X):
-#     if n < 0:
-#         return 0
-#     elif n == 0:
-#         return 1
-#     elif n in X:
-#         return 1 + sum(staircase(n - g, X) for g in X if g < n)
-#     else:
-#         return sum(staircase(n - g, X) for g in X if g < n)
-
 def staircase(n, X):
     if n < 0:
         return 0
     elif n == 0:
         return 1
     elif n in X:
-        for g in X:
-            print('g ', g)
         return 1 + sum(staircase(n - g, X) for g in X if g < n)
     else:
         return sum(staircase(n - g, X) for g in X if g < n)
+
+
 
 print(staircase(4, [1,2]))
 print(staircase(4, [1,3,5]))
