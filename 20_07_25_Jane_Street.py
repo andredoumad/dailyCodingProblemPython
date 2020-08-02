@@ -1,6 +1,5 @@
+# Andre Doumad
 '''
-Andre Doumad
-
 This problem was asked by Jane Street.
 
 cons(a, b) constructs a pair, and car(pair) and cdr(pair) 

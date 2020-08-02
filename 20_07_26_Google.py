@@ -1,6 +1,5 @@
+# Andre Doumad
 '''
-Daily Coding Problem: Problem #6 [Hard]
-
 This problem was asked by Google.
 
 An XOR linked list is a more memory efficient doubly linked list. 

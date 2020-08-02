@@ -1,5 +1,4 @@
 '''
-Daily Coding Problem: Problem #8 [Easy]
 This problem was asked by Google.
 
 A unival tree (which stands for "universal value") is a 
@@ -16,7 +15,6 @@ For example, the following tree has 5 unival subtrees:
    1   0
   / \
  1   1
-We will be sending the solution tomorrow, along with tomorrow's question. 
 '''
 import sys
 class Node(object):
