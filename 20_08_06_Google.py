@@ -34,32 +34,32 @@ The name of a file contains at least a period and an extension.
 The name of a directory or sub-directory will not contain a period.
 '''
 import unittest
+
 class Solution(object):
-    def solve(self, input):
-        """
-        :type input: str
-        :rtype: int
-        """
-        stack = []
-        current_level = 0
-        res = 0
-        for name in input.split('\n'):
-            #print stack, current_level
+    def solve(self, n):
+        nlist = []
+        level = 0
+        result = 0
+        for name in n.split('\n'):
+            print(nlist, level)
             tabs = name.split('\t')
-            if len(tabs) - 1 == current_level:
-                if stack:
-                    stack.pop()
-                stack.append(tabs[-1])
-            elif len(tabs) -1 > current_level:
-                stack.append(tabs[-1])
+            if len(tabs) -1 == level:
+                if nlist:
+                    i = nlist.pop()
+                    print('popping nlist ', i)
+                print('tabs[-1] ', tabs[-1])
+                nlist.append(tabs[-1])
+            elif len(tabs) -1 > level:
+                print('tabs[-1] ', tabs[-1])
+                nlist.append(tabs[-1])
             else:
-                for _ in range(current_level - len(tabs) + 2):
-                    if stack: stack.pop()
-                stack.append(tabs[-1])
+                for i in range(level - len(tabs) + 2):
+                    if nlist: nlist.pop()
+                nlist.append(tabs[-1])
             if '.' in tabs[-1]:
-                res = max(res, len('/'.join(stack)))
-            current_level = len(tabs) - 1
-        return res
+                result = max(result, len('/'.join(nlist)))
+            level = len(tabs)-1
+        return result
 
 
 class unitTest(unittest.TestCase):
