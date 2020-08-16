@@ -1,7 +1,7 @@
 # Andre Doumad
 
 '''
-This problem was asked by Facebook.
+This problem was asked by Facebook, Google, Amazon.
 
 Given a string of round, curly, and square open and closing brackets, return whether the brackets are balanced (well-formed).
 
